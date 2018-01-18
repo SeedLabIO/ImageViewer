@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		13BDF0711E573C78009C458F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDF0701E573C78009C458F /* UIColor.swift */; };
 		13BDF0721E573D10009C458F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDF0701E573C78009C458F /* UIColor.swift */; };
+		39844C922010C07B00EA972B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39844C902010C07B00EA972B /* MainInterface.storyboard */; };
+		39844C972010C07B00EA972B /* Example Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39844C8B2010C07B00EA972B /* Example Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		39844CC22010C18100EA972B /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39844CC12010C18100EA972B /* ActionViewController.swift */; };
+		39844CC42010C62C00EA972B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39844CC32010C62C00EA972B /* Assets.xcassets */; };
 		4CD1C49C1C16FF64008D5F84 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C49B1C16FF64008D5F84 /* CGPoint.swift */; };
 		4CD1C49D1C16FF64008D5F84 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1C49B1C16FF64008D5F84 /* CGPoint.swift */; };
 		5AF0E6605E3B055280A902DF /* GalleryItemsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0EF3CAFE8B7972354F05D /* GalleryItemsDelegate.swift */; };
@@ -93,8 +97,37 @@
 		EBE627131D268AB70095999A /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE627111D268AB70095999A /* GalleryItem.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		39844C942010C07B00EA972B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7DABE3F1C12245B00F5BD7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39844C8A2010C07B00EA972B;
+			remoteInfo = "Example Today";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		39844C962010C07B00EA972B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				39844C972010C07B00EA972B /* Example Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		13BDF0701E573C78009C458F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		39844C8B2010C07B00EA972B /* Example Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Example Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39844C912010C07B00EA972B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		39844C932010C07B00EA972B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39844CC12010C18100EA972B /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		39844CC32010C62C00EA972B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD1C49B1C16FF64008D5F84 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		5AF0EF3CAFE8B7972354F05D /* GalleryItemsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryItemsDelegate.swift; sourceTree = "<group>"; };
 		637822AB1FC4F54D00E839A4 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
@@ -148,6 +181,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		39844C882010C07B00EA972B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7897CDF1C1350B7006447FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +213,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39844C8C2010C07B00EA972B /* Example Today */ = {
+			isa = PBXGroup;
+			children = (
+				39844CC32010C62C00EA972B /* Assets.xcassets */,
+				39844CC12010C18100EA972B /* ActionViewController.swift */,
+				39844C902010C07B00EA972B /* MainInterface.storyboard */,
+				39844C932010C07B00EA972B /* Info.plist */,
+			);
+			path = "Example Today";
+			sourceTree = "<group>";
+		};
 		C2573FA41DA6FED600DABB1E /* Thumbnails Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +253,7 @@
 				C7897CE31C1350B7006447FB /* Example */,
 				C7DABE4A1C12245B00F5BD7B /* ImageViewer */,
 				EB1CEC141C84A4EE00BB27B8 /* ImageViewerTests */,
+				39844C8C2010C07B00EA972B /* Example Today */,
 				C7DABE491C12245B00F5BD7B /* Products */,
 				D72F02FF1F6C02D2009C8A39 /* Frameworks */,
 			);
@@ -213,6 +265,7 @@
 				C7DABE481C12245B00F5BD7B /* ImageViewer.framework */,
 				C7897CE21C1350B7006447FB /* Example.app */,
 				EB1CEC131C84A4EE00BB27B8 /* ImageViewerTests.xctest */,
+				39844C8B2010C07B00EA972B /* Example Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -396,6 +449,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		39844C8A2010C07B00EA972B /* Example Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39844C9A2010C07B00EA972B /* Build configuration list for PBXNativeTarget "Example Today" */;
+			buildPhases = (
+				39844C872010C07B00EA972B /* Sources */,
+				39844C882010C07B00EA972B /* Frameworks */,
+				39844C892010C07B00EA972B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example Today";
+			productName = "Example Today";
+			productReference = 39844C8B2010C07B00EA972B /* Example Today.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C7897CE11C1350B7006447FB /* Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7897CF31C1350B7006447FB /* Build configuration list for PBXNativeTarget "Example" */;
@@ -403,10 +473,12 @@
 				C7897CDE1C1350B7006447FB /* Sources */,
 				C7897CDF1C1350B7006447FB /* Frameworks */,
 				C7897CE01C1350B7006447FB /* Resources */,
+				39844C962010C07B00EA972B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				39844C952010C07B00EA972B /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -458,6 +530,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = MailOnline;
 				TargetAttributes = {
+					39844C8A2010C07B00EA972B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					C7897CE11C1350B7006447FB = {
 						CreatedOnToolsVersion = 7.1.1;
 						LastSwiftMigration = 0900;
@@ -487,11 +563,21 @@
 				C7897CE11C1350B7006447FB /* Example */,
 				C7DABE471C12245B00F5BD7B /* ImageViewer */,
 				EB1CEC121C84A4EE00BB27B8 /* ImageViewerTests */,
+				39844C8A2010C07B00EA972B /* Example Today */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		39844C892010C07B00EA972B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39844CC42010C62C00EA972B /* Assets.xcassets in Resources */,
+				39844C922010C07B00EA972B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7897CE01C1350B7006447FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -519,6 +605,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		39844C872010C07B00EA972B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39844CC22010C18100EA972B /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7897CDE1C1350B7006447FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -622,7 +716,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		39844C952010C07B00EA972B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39844C8A2010C07B00EA972B /* Example Today */;
+			targetProxy = 39844C942010C07B00EA972B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		39844C902010C07B00EA972B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39844C912010C07B00EA972B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		C7897CE81C1350B7006447FB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -642,10 +752,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		39844C982010C07B00EA972B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Example Today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mailonline.Example.Example-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39844C992010C07B00EA972B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Example Today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mailonline.Example.Example-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C7897CF11C1350B7006447FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -659,7 +813,9 @@
 		C7897CF21C1350B7006447FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -844,6 +1000,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		39844C9A2010C07B00EA972B /* Build configuration list for PBXNativeTarget "Example Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39844C982010C07B00EA972B /* Debug */,
+				39844C992010C07B00EA972B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C7897CF31C1350B7006447FB /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
