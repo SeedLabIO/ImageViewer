@@ -169,7 +169,9 @@ open class GalleryViewController: UIPageViewController, ItemControllerDelegate {
         self.modalPresentationStyle = .overFullScreen
         self.dataSource = pagingDataSource
 
-        UIApplication.applicationWindow.windowLevel = (statusBarHidden) ? UIWindowLevelStatusBar + 1 : UIWindowLevelNormal
+        if let window = UIApplication.applicationWindow {
+            window.windowLevel = (statusBarHidden) ? UIWindowLevelStatusBar + 1 : UIWindowLevelNormal
+        }
 
         NotificationCenter.default.addObserver(self, selector: #selector(GalleryViewController.rotate), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
 
@@ -595,8 +597,9 @@ open class GalleryViewController: UIPageViewController, ItemControllerDelegate {
         self.modalTransitionStyle = .crossDissolve
 
         self.dismiss(animated: animated) {
-
-            UIApplication.applicationWindow.windowLevel = UIWindowLevelNormal
+            if let window = UIApplication.applicationWindow {
+                window.windowLevel = UIWindowLevelNormal
+            }
             completion?()
         }
     }

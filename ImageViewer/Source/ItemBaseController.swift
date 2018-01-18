@@ -356,7 +356,9 @@ open class ItemBaseController<T: UIView>: UIViewController, ItemController, UIGe
 
         let swipeToDismissCompletionBlock = { [weak self] in
 
-            UIApplication.applicationWindow.windowLevel = UIWindowLevelNormal
+            if let window = UIApplication.applicationWindow {
+                window.windowLevel = UIWindowLevelNormal
+            }
             self?.swipingToDismiss = nil
             self?.delegate?.itemControllerDidFinishSwipeToDismissSuccessfully()
         }
@@ -424,7 +426,9 @@ open class ItemBaseController<T: UIView>: UIViewController, ItemController, UIGe
 
             if finished {
 
-                UIApplication.applicationWindow.windowLevel = UIWindowLevelNormal
+                if let window = UIApplication.applicationWindow {
+                    window.windowLevel = UIWindowLevelNormal
+                }
 
                 self?.isAnimating = false
             }

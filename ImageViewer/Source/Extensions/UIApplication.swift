@@ -10,11 +10,17 @@ import UIKit
 
 extension UIApplication {
 
-    static var applicationWindow: UIWindow {
+    static var applicationWindow: UIWindow? {
+        if (isExtension()) {
+            return nil
+        }
         return (UIApplication.shared.delegate?.window?.flatMap { $0 })!
     }
 
     static var isPortraitOnly: Bool {
+        if (isExtension()) {
+            return true // todo: or??
+        }
 
         let orientations = UIApplication.shared.supportedInterfaceOrientations(for: nil)
 
